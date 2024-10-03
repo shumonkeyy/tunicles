@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tunicles</title>
+    <link rel="shortcut icon" href="images/Tunicles.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- carousel/slider -->
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/banner 1.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animate__animated animate__bounceInDown">
+              Your Favorite K-POP Paradise
+            </h5>
+            <p>Where every beat hits home.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/banner 2.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animate__animated animate__bounceInDown">
+              Unleash your inner idol
+            </h5>
+            <p>Dance to the sound of K-Pop!</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/banner 3.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animate__animated animate__bounceInDown">
+              Thirsty for more K-Pop items?
+            </h5>
+            <p>Quench your thirst for K-Pop here.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#slider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#slider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-navbar sticky-top">
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand" href="#">𐙚˙✧˖°📂 ༘ ⋆｡ ˚Tunicles 𝜗𝜚 ࣪˖ ִ𐙚 </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <form class="d-flex mx-auto w-50" role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search for Albums..."
+                aria-label="Search for Albums..."
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </form>
+          <button class="btn"><i class="fa-solid fa-cart-shopping"></i></button>
+          <div class="ms-2">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- This week's special deals -->
+    <h1 class="mt-3">
+      This Week's Special Deals <span class="badge">Ending Soon</span>
+    </h1>
+    <div class="container">
+      <div class="row mt-1">
+        <div class="col-md-6 col-lg-3 mt-1 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="images/Grayscale Photo Musicians Influencer Maximalism New Track Instagram Post Set.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">YEONJUN'S MIXTAPE: GGUM</h5>
+              <p class="card-text">
+                Artist: YEONJUN <br />
+                Price: $17.99 <br />
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Order Now
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">
+                        Successful.
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      This item has been added to your cart.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Undo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-1 d-flex align-items-stretch">
+          <div class="card">
+            <img src="images/GOLDEN.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                GOLDEN <span class="badge">Low In-Stock</span>
+              </h5>
+              <p class="card-text">
+                Artist: JUNGKOOK <br />
+                Price: $17.99 <br />
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-1 d-flex align-items-stretch">
+          <div class="card">
+            <img src="images/SIS.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">SIS (SOFT IS STRONG)</h5>
+              <p class="card-text">
+                Artist: KATSEYE <br />
+                Price: $17.99 <br />
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-1 d-flex align-items-stretch">
+          <div class="card">
+            <img src="images/RISE.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">RISE</h5>
+              <p class="card-text">
+                Artist: MADEIN <br />
+                Price: $17.99 <br />
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- artists -->
+    <div class="d-flex flex-direction-row justify-content-between">
+      <h1 class="mt-3">Artists</h1>
+      <a class="view-more-link mt-3" href="#">View More &rarr;</a>
+    </div>
+    <div class="container">
+      <div class="row mt-1">
+        <div class="artist-img col-sm-6 col-md-4 col-lg-2 mt-1">
+          <img
+            src="https://c-fa.cdn.smule.com/smule-gg-uw1-s-7/arr/8d/46/aff73a8f-fd24-4cb2-a692-6d1b8673ca88.jpg"
+            class="w-100 rounded-circle"
+            alt=""
+          />
+        </div>
+        <div class="artist-img col-sm-6 col-md-4 col-lg-2 mt-1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8NUqTNQFQ8mgxjHW4Dp5Il7HEUzhH2LdoQ&s"
+            class="w-100 rounded-circle"
+            alt=""
+          />
+        </div>
+        <div class="artist-img col-sm-6 col-md-4 col-lg-2 mt-1">
+          <img
+            src="https://c-fa.cdn.smule.com/rs-s80/arr/0d/34/fa6e2c42-62ac-4e8c-949b-2d5875bc64a6.jpg"
+            class="w-100 rounded-circle"
+            alt=""
+          />
+        </div>
+        <div class="artist-img col-sm-6 col-md-4 col-lg-2 mt-1">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BYzU5NjA3Y2YtY2UwZi00ZDMwLWE5NjAtOTljNTA4NTI4ZjYyXkEyXkFqcGc@._V1_.jpg"
+            class="w-100 rounded-circle"
+            alt=""
+          />
+        </div>
+        <div class="artist-img col-sm-6 col-md-4 col-lg-2 mt-1">
+          <img
+            src="https://c-fa.cdn.smule.com/smule-gg-uw1-s-8/arr/9b/0e/305f74b2-50e2-4357-9f61-d86dc38c4cc3.jpg"
+            class="w-100 rounded-circle"
+            alt=""
+          />
+        </div>
+        <div class="artist-img col-sm-6 col-md-4 col-lg-2 mt-1">
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb8939960e5144b51d7903899f"
+            class="w-100 rounded-circle"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- In Stock -->
+    <div class="d-flex flex-direction-row justify-content-between">
+      <h1 class="mt-3">In-Stock Albums</h1>
+      <a class="view-more-link mt-3" href="#">View More &rarr;</a>
+    </div>
+    <div class="container">
+      <div class="row mt-1">
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273653887a83332de0350151f10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">ROMANCE: UNTOLD</h5>
+              <p class="card-text">
+                Artist: ENHYPEN <br />
+                Price: $17.99 <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://images.genius.com/577aa54a37ca38de50dada9af9b994a5.1000x1000x1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">I'VE MINE</h5>
+              <p class="card-text">
+                Artist: IVE <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://ravennonest.wordpress.com/wp-content/uploads/2024/08/lesserafim-crazy.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">CRAZY</h5>
+              <p class="card-text">
+                Artist: LE SSERAFIM <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://pbs.twimg.com/media/F5e0HmiW8AA_QlA.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">THE NAME CHAPTER: FREEFALL</h5>
+              <p class="card-text">
+                Artist: TOMORROW X TOGETHER <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273c0fd19def5108123e077d634"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">MEOVV</h5>
+              <p class="card-text">
+                Artist: MEOVV <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273c9c9aaadb2d6d3d44be06332"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fe3O4: Stick Out</h5>
+              <p class="card-text">
+                Artist: NMIXX <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Merch -->
+    <div class="d-flex flex-direction-row justify-content-between">
+      <h1 class="mt-3">Merch</h1>
+      <a class="view-more-link mt-3" href="#">View More &rarr;</a>
+    </div>
+    <div class="container">
+      <div class="row mt-1">
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://kplaceshop.com/cdn/shop/files/enhypen-official-lightstick-main-image_600x.jpg?v=1715848686"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">ENHYPEN LIGHTSTICK VER. 1</h5>
+              <p class="card-text">
+                Artist: ENHYPEN <br />
+                Price: $17.99 <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://kgifts.shop/cdn/shop/products/bd9457631a3b64c07adf7b113c3a3db0.jpg?v=1686317988"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">LE SSERAFIM POP-UP JACKET</h5>
+              <p class="card-text">
+                Artist: LE SSERAFIM<br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://saranghello.com/cdn/shop/products/COVER_410b000f-d13e-4ad3-be08-62772fd9cc43_1080x.jpg?v=1677453196"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">IVE LIGHTSTICK</h5>
+              <p class="card-text">
+                Artist: IVE <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://kplaceshop.com/cdn/shop/files/aespa-t-shirt-photocard-set-armageddon-the-mystery-circle-official-md-main-image_600x.jpg?v=1717488718"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">T-SHIRT - ARMAGEDDON</h5>
+              <p class="card-text">
+                Artist: AESPA <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://kpopmerch.com/cdn/shop/files/stray-kids-md-goods-stray-kids-official-light-stick-ver-2-35534830141621_600x.jpg?v=1687420575"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">STRAYKIDS LIGHTSTICK</h5>
+              <p class="card-text">
+                Artist: STRAYKIDS <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-1 d-flex align-items-stretch">
+          <div class="card instock-card">
+            <img
+              src="https://kpopmerch.com/cdn/shop/products/team-md-goods-twice-official-light-stick-infinity-candybong-35200963674293_600x.jpg?v=1679297184"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">TWICE CANDYBONG</h5>
+              <p class="card-text">
+                Artist: TWICE <br />
+                Price: $17.99<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start">
+      <div class="copyright px-3 py-3 mt-3">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>Tunicles. Copyright &copy;. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook me-3"></i>
+              <i class="fa-brands fa-youtube me-3"></i>
+              <i class="fa-brands fa-instagram me-3"></i>
+              <i class="fa-brands fa-x-twitter me-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+/* carousel sliders */
+/* navigation bar */
+nav {
+  background-color: #eadbc8;
+}
+.nav-active {
+  border-bottom: 3px solid #c7b7a3 !important;
+}
+/* nav ul ul {
+  right: 0px;
+} */
+.dropdown {
+  background-color: #c7b7a3 !important;
+  border-radius: 5%;
+}
+.btn {
+  background-color: #c7b7a3 !important;
+}
+/* best deals */
+h1 {
+  margin-left: 5%;
+}
+.btn:hover {
+  transition: 1s !important;
+  background-color: #eadbc8 !important;
+}
+.badge {
+  background-color: #eadbc8;
+}
+/* artist */
+.artist-img:hover {
+  transition: 2s !important;
+  transform: rotateY(360deg) !important;
+  cursor: pointer;
+}
+/* instock albums */
+.view-more-link {
+  transition: 1s;
+  color: #c7b7a3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 48px;
+  margin-right: 5%;
+  text-decoration: none;
+}
+.view-more-link:hover {
+  color: #eadbc8;
+}
+.card-title {
+  font-size: 20px !important;
+}
+
+/* footer */
+footer {
+  background-color: #c7b7a3;
+}
