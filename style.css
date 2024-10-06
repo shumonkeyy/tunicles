@@ -42,7 +42,7 @@ h1 {
 /* instock albums */
 .view-more-link {
   transition: 1s;
-  color: #c7b7a3;
+  color: #000;
   font-weight: 500;
   font-size: 16px;
   line-height: 48px;
@@ -50,7 +50,7 @@ h1 {
   text-decoration: none;
 }
 .view-more-link:hover {
-  color: #eadbc8;
+  text-decoration: underline;
 }
 .card-title {
   font-size: 20px !important;
