@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <!-- chartjs -->
@@ -36,7 +36,7 @@
     ></script>
     <style>
       * {
-        font-family: "Lato", system-ui;
+        font-family: "Nunito", system-ui;
       }
       .bg-grey {
         background-color: #231f20;
@@ -128,7 +128,7 @@
                   <h3 class="card-title h2">1,250</h3>
                   <span class="text-dark">
                     <i class="fas fa-chart-line"></i>
-                    Albums Sold Today
+                    &nbsp;&nbsp;Albums Sold Today
                   </span>
                 </div>
               </div>
@@ -139,7 +139,7 @@
                   <h3 class="card-title h2">$22,487</h3>
                   <span class="text-dark">
                     <i class="fas fa-chart-line"></i>
-                    Earned Today
+                    &nbsp;&nbsp;Earned Today
                   </span>
                 </div>
               </div>
@@ -150,7 +150,7 @@
                   <h3 class="card-title h2">$10,500</h3>
                   <span class="text-dark">
                     <i class="fas fa-chart-line"></i>
-                    Revenue from Today
+                    &nbsp;&nbsp;Revenue from Today
                   </span>
                 </div>
               </div>
@@ -163,7 +163,8 @@
                 <h2 class="h6 float-start">THIS YEAR'S STATISTICS</h2>
                 <a href="#" class="float-end text-decoration-none">View More</a>
               </div>
-
+            </div>
+            <div class="card">
               <div>
                 <canvas id="myChart"></canvas>
               </div>
@@ -259,35 +260,39 @@
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div>
-                <h2 class="h6 float-start">Age Group of Customers</h2>
+            <div class="row col-md-6">
+              <div class="mx-auto">
+                <h2 class="h6 float-start">AGE GROUP OF CUSTOMERS</h2>
                 <a href="#" class="float-end text-decoration-none">View More</a>
               </div>
-              <div class="pie w-50 mx-auto">
-                <div>
-                  <canvas id="myChart-b"></canvas>
-                </div>
+              <div class="mx-auto">
+                <div class="card">
+                  <div class="pie mx-auto">
+                    <div>
+                      <canvas id="myChart-b"></canvas>
+                    </div>
 
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                <script>
-                  const ctb = document.getElementById("myChart-b");
+                    <script>
+                      const ctb = document.getElementById("myChart-b");
 
-                  new Chart(ctb, {
-                    type: "pie",
-                    data: {
-                      labels: ["0-9", "10-19", "20-29", "30+"],
-                      datasets: [
-                        {
-                          label: "Age Group of Customers",
-                          data: [20, 50, 20, 10],
-                          borderWidth: 1,
+                      new Chart(ctb, {
+                        type: "pie",
+                        data: {
+                          labels: ["0-9", "10-19", "20-29", "30+"],
+                          datasets: [
+                            {
+                              label: "AGE GROUP OF CUSTOMERS",
+                              data: [20, 50, 20, 10],
+                              borderWidth: 1,
+                            },
+                          ],
                         },
-                      ],
-                    },
-                  });
-                </script>
+                      });
+                    </script>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
